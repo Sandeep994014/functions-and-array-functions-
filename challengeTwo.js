@@ -18,6 +18,71 @@
 // array) �
 
 
-const calcTip = function(billValue) {
-    return 
+
+//  code goes here logic for one is sucess but for array faild !
+// let totalTip;
+// var billValue = 1000;
+
+// const calcTip = function(billValue) {
+//     if(billValue >= 50 && billValue <=300){
+//         totalTip = billValue * (0.15);
+//         // console.log(totalTip)
+//        return totalTip + billValue;
+        
+//     }else if(billValue > 300){
+//         totalTip = billValue * (0.20);
+//         // console.log(totalTip)
+//        return totalTip + billValue;
+//     }else{
+//      return billValue;
+//     }
+// }
+
+// let totalTips = calcTip(billValue);
+// console.log(totalTips);
+
+
+// logic faild !
+
+// decleration of variable
+// let totalTip;
+// let bills = [100 ,222 ,333]
+// const calcTip = function (bills) {
+//     for (let i = 0; i < bills.length; i++) {
+//         if (bills >=50 && bills <=300) {
+//             totalTip = bills * (0.15);
+//             return totalTip + bills;
+//         } else {
+//             totalTip = bills * (0.20);
+//             return totalTip + bills
+//         }    
+//     }
+// }
+// let totalTips = calcTip(bills);
+// console.log(totalTips);
+
+
+let bills = [100, 222, 333, 1000];
+let totalTip;
+
+const calcTip = function(bills) {
+    let totalTips = []; 
+    for (let i = 0; i < bills.length; i++) {
+        let bill = bills[i]; 
+
+        if (bill >= 50 && bill <= 300) {
+            totalTip = bill * 0.15; 
+        } else {
+            totalTip = bill * 0.20; 
+        }
+        totalTips.push(totalTip + bill); 
+    }
+    return totalTips; 
 }
+
+let totalTips = calcTip(bills);
+console.log(totalTips); 
+
+
+
+
