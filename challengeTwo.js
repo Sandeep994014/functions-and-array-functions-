@@ -65,24 +65,38 @@
 let bills = [100, 222, 333, 1000];
 let totalTip;
 
-const calcTip = function(bills) {
-    let totalTips = []; 
-    for (let i = 0; i < bills.length; i++) {
-        let bill = bills[i]; 
+// const calcTip = function(bills) {
+//     let totalTips = []; 
 
-        if (bill >= 50 && bill <= 300) {
-            totalTip = bill * 0.15; 
-        } else {
-            totalTip = bill * 0.20; 
-        }
-        totalTips.push(totalTip + bill); 
-    }
-    return totalTips; 
-}
+//     for (let i = 0; i < bills.length; i++) {
+    //     let bill = bills[i]; 
 
-let totalTips = calcTip(bills);
-console.log(totalTips); 
+    //     if (bill >= 50 && bill <= 300) {
+    //         totalTip = bill * 0.15; //100*(0.15)= 15
+    //     } else {
+    //         totalTip = bill * 0.20; 
+    //     }
+    //     totalTips.push(totalTip + bill); 
+    // }
+    // return totalTips; 
+// }
 
+// let totalTips = calcTip(bills);
+// console.log(totalTips); 
 
+// const calcTip = (bills) => {
+// }
 
+let emptArry = [];
+bills.forEach(ele =>{
+   if (ele >=50 && ele <=300) {
+    totalTip = ele * 0.15
+    totalTip + ele;
+   } else {
+    totalTip = ele * 0.20
+    totalTip + ele;
+   }
+   emptArry.push(totalTip + ele);
+})
+console.log(emptArry)
 
