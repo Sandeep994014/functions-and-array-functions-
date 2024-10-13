@@ -47,10 +47,10 @@
 
 
 // let removeDuplicates = function(nums){
-//     // for (let i = 0; i < nums.length; i++) {
+//     for (let i = 0; i < nums.length; i++) {
         
     
-//     // }
+//     }
 //     return arr.filter(function(value, index) {
 //         return arr.indexOf(value) === index;
 //     });
@@ -64,11 +64,14 @@
 const numbers = [0,0,1,1,1,2,2,3,3,4];
 console.log(numbers.length)
 
-const removeDuplicates = function(nums) {
-    return nums.filter((value, index)=> {
-        return nums.indexOf(value) === index;
+const removeDuplicates = function(numbers) {
+    //methord 1 ;
+    return numbers.filter((value, index)=> {
+        return numbers.indexOf(value) === index;
     });
-    
+
+    //methord 2;
+
 };
 
 
