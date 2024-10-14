@@ -1,6 +1,8 @@
 // Solve this :
  
 // Print the second largest number out of this array [6, 12, 4, 24, 1, 9]
+
+// let array = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let array = [6, 12, 4, 24, 1, 9]
 console.log(array.length)
 console.log(array)
